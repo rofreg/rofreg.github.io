@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Ryan Laughlin is a person on the Internet</title>
+    <!--[if lt IE 9]>
+      <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    <link href='reset.css' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Gentium+Basic' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Ryan Laughlin is a Rails developer and user interface designer based in Providence, RI. (This is his website.)">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
+    <style>
+      html, body {
+        font-family: 'Gentium Basic', Times, serif;
+        background: #555;
+        min-width: 980px;
+        color: #fff;
+        overflow-x: hidden;
+      }
+      #the_scream {
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #000 url('scream-cropped.jpg') top center no-repeat;
+      }
+      #the_background {
+        position: fixed;
+        z-index: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        background: #000; /* Old browsers */
+        background: -moz-radial-gradient(50% 105%, ellipse cover,  #333333 0%, #000000 56%); /* FF3.6+ */
+        background: -webkit-gradient(radial, 50% 105%, 0px, center center, 100%, color-stop(0%,#333333), color-stop(56%,#000000)); /* Chrome,Safari4+ */
+        background-image: -webkit-radial-gradient(50% 105%, ellipse cover,  #333333 0%,#000000 56%); /* Chrome10+,Safari5.1+ */
+        background: -o-radial-gradient(50% 105%, ellipse cover,  #333333 0%,#000000 56%); /* Opera 12+ */
+        background: -ms-radial-gradient(50% 105%, ellipse cover,  #333333 0%,#000000 56%); /* IE10+ */
+        background: radial-gradient(ellipse at center,  #333333 0%,#000000 56%); /* W3C */
+      }
+
+      #the_info{
+        position: fixed;
+        color: #fff;
+        top: 50%;
+        left: 50%;
+        width: 380px;
+        height: 380px;
+        margin-left: -200px;
+        margin-top: -200px;
+        opacity: 0;
+        z-index: 1;
+        padding: 0 20px 40px;
+        background: rgba(255,100,100,0.14);
+        font-size: 24px;
+      }
+      #the_info h3{
+        margin-top: 16px;
+        color: #977;
+        font-size: 16px;
+        font-weight: normal;
+        text-transform: lowercase;
+      }
+      #the_info a{
+        color: inherit;
+        text-decoration: none
+      }
+      #the_info a:hover{
+        text-decoration: underline
+      }
+      #peace{
+        text-align: right;
+        font-size: 14px;
+        color: #977;
+        margin-top: 20px;
+      }
+
+      header{
+        margin: 225px -10px;
+        position: relative;
+        text-shadow: 0px 0px 4px #066;
+      }
+      .blurred{
+        display: none;
+        -ms-filter: blur(4px);
+        -webkit-filter: blur(4px);
+        -moz-filter: blur(4px);
+        -o-filter: blur(4px);
+        filter: url("#blur4px");
+        filter: progid:DXImageTransform.Microsoft.Blur(pixelradius=4);
+      }
+      header div.background{
+        position: absolute;
+        z-index: 2;
+        left: 50%;
+        margin-left: -535px;
+        width: 1070px;
+        height: 300px;
+        background: #000 url('scream-cropped.jpg') top center no-repeat;
+      }
+      #intro{
+        position: relative;
+        z-index: 3;
+        background: rgba(0,255,255,0.4);
+        -webkit-transform: rotate(1.5deg);
+        /*margin: 0 -5px;*/
+        -webkit-box-shadow: 0px 0px 20px rgba(0,0,0,0.8);
+        font-size: 40px;
+        text-align: center;
+      }
+      #centered_block{
+        /*background: rgba(255,0,0,0.4);*/
+        width: 920px;
+        margin: 0 auto;
+        overflow: visible;
+        height: 240px;
+        padding: 25px 10px 32px;
+      }
+      #handle{
+        font-size: 100px;
+        line-height: 80px;
+      }
+      #yours_truly{
+        font-size: 80px;
+        line-height: 120px;
+      }
+      #location{
+        font-size: 60px;
+        line-height: 45px;
+      }
+      footer{
+        display: none;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        padding: 10px;
+        text-align: center;
+        background: rgba(255,255,0,0.4);
+      }
+      a#photo_credit{
+        position: fixed;
+        z-index: 2;
+        bottom: 5px;
+        left: 5px;
+        color: #555;
+        text-decoration: none;
+      }
+      a#photo_credit:hover{
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="the_scream"></div>
+    <div id="the_background"></div>
+    <header>
+      <!-- <div class="blurred background"></div> -->
+      <div id="intro">
+        <div id="centered_block">
+          <div class="text" style="display: none">
+            <span id="handle">rofreg</span> is the online alias of<br>
+            <span id="yours_truly">Ryan Laughlin</span>, a
+            <script>
+              var age = new Date - 635506800000;
+              document.write((age / 1000 / 60.0 / 60.0 / 24.0 / 365.25).toFixed(2));
+            </script><noscript>22.86</noscript>-year-old<br>
+            developer and designer based in <span id="location">Providence, RI.</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="the_info">
+      <h3>Current occupation:</h3>
+      co-founder and CTO at <a href="http://splitwise.com">Splitwise</a>
+
+      <h3>Email:</h3>
+      <a href="mailto:ryan@splitwise.com?Subject=Oh+hey+there">ryan@splitwise.com</a>
+
+      <h3>Twitter:</h3>
+      <a href="http://twitter.com/rofreg">@rofreg</a>
+
+      <h3>Side projects:</h3>
+      <a href="http://pinchpad.com" target="_blank">Hourly Comics</a> &nbsp;<span style="font-size: 16px; color: #977"><a href="http://www.pinchpad.com/day/2011/02/01" target="_blank">2011</a> / 
+      <a href="http://pinchpad.rofreg.com/date/2012-03-01" target="_blank">12</a> / 
+      <a href="http://pinchpad.rofreg.com/date/2013-04-01" target="_blank">13</a> / 
+      <a href="http://pinchpad.rofreg.com/date/2014-05-01" target="_blank">14</a> / 
+      <a href="http://www.pinchpad.com/day/2015/06/01" target="_blank">15</a> / 
+      <a href="http://www.pinchpad.com/day/2016/07/01" target="_blank">16</a></span><br>
+      <a href="https://itunes.apple.com/us/app/lightweight-simple-weight/id690015714?mt=8" target="_blank">Lightweight</a> &nbsp;<span style="font-size: 16px; color: #977">weight &amp; calorie tracker</span><br>
+      <a href="https://itunes.apple.com/us/app/pinch-pad-post-sketches-to/id999197469?mt=8" target="_blank">Pinch Pad</a> &nbsp;<span style="font-size: 16px; color: #977">simple drawing app</span><br>
+      <a href="https://ripta.info/" target="_blank">RIPTA Realtime</a> &nbsp;<span style="font-size: 16px; color: #977">live transit data</span><br>
+      <a href="https://ribit.rofreg.com/" target="_blank">RIBIT</a> &nbsp;<span style="font-size: 16px; color: #977">RI legislation tracker</span>
+
+      <div id="peace">
+        cheers! &ndash;rjl
+      </div>
+    </div>
+    <a id="photo_credit" href="http://www.flickr.com/photos/aturkus/320880457/">photo by aturkus</a>
+
+    <script>
+      var maxScroll = $('header').offset().top + $('header').height() + 25;
+      $(document).ready(function(){
+        // Randomly change "peace" text
+        // randomTitles = "Ryan Laughlin is a person on the internet"
+        // randomTitles = "Ryan Laughlin is a song from the '60s"
+        // randomTitles = "Ryan Laughlin is great for a breakfast or a light dessert"
+        // var randomTitles = ["cheers! &ndash;rjl"];
+        // $('#peace').html(randomTitles[Math.floor(Math.random() * randomTitles.length)]);
+
+        // Set body height so that we can scroll past the header
+        $('body').css('height', $(window).height() + maxScroll);
+        $(window).resize(function(){
+          $('body').css('height', $(window).height() + maxScroll);
+        });
+
+        // We're ready to show the header text
+        $('#centered_block .text').delay(400).fadeIn();
+
+        // Super basic parallax scrolling
+        $(document).scroll(function(){
+          $('#the_scream, header .background').css({
+            'background-position-y': -$(document).scrollTop() / 4,
+            opacity: (maxScroll-$(document).scrollTop()) / maxScroll
+          });
+          $('#the_info').css({opacity: ($(document).scrollTop() - maxScroll / 2) / (maxScroll / 2) });
+        });
+      });
+    </script>
+
+    <script type="text/javascript">
+      // Google Analytics
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-37305199-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
