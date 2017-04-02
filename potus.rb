@@ -20,7 +20,8 @@ progress_bar = SEGMENT_COUNT.times.collect{|segment| percent_elapsed > (segment 
 percent_elapsed_string = " #{percent_elapsed}%"
 new_tweet_text = "#{progress_bar}#{percent_elapsed_string}"
 
-latest_tweet = client.user_timeline("potus_progress").first
+recent_tweets = client.user_timeline("potus_progress", exclude_replies: true, count: 100)
+latest_tweet = recent_tweets.find{|tweet| tweet.text[/[0-9]%$/]}
 
 if latest_tweet&.text&.end_with?(percent_elapsed_string)
   puts "No tweet necessary at this time"
