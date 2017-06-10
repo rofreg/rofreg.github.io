@@ -1,0 +1,134 @@
+
+html, body {
+  height: 100%
+}
+body {
+  font-family: 'Gentium Basic', Times, serif;
+  background: #fff;
+  color: #444;
+  display: table;
+  width: 100%;
+}
+#container {
+  min-height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+header {
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 110%;
+}
+header img {
+  width: 125px;
+  height: 125px;
+  display: block;
+  margin: 0 auto -15px;
+}
+header span {
+  color: #a33e50;
+  font-size: 150%;
+  line-height: 110%;
+}
+#handle {
+  font-size: 250%;
+}
+#yours_truly {
+  font-size: 200%;
+}
+
+#info{
+  margin: 0 auto 40px;
+  background: #a33e50;
+  color: #fff;
+  width: 380px;
+  height: 399px;
+  padding: 1px 20px 20px;
+  font-size: 24px;
+}
+#info h3{
+  margin-top: 15px;
+  color: rgba(255,255,255,0.6);
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: lowercase;
+}
+#info a{
+  color: inherit;
+  text-decoration: none
+}
+#info a:hover{
+  text-decoration: underline
+}
+#info span {
+  font-size: 16px;
+  color: rgba(255,255,255,0.6);
+  padding-left: 6px;
+}
+#info hr {
+  display: none;
+}
+#info ul {
+  list-style: none;
+}
+#peace{
+  text-align: right;
+  font-size: 14px;
+  color: rgba(255,255,255,0.6);
+  margin-top: 0px;
+}
+
+@media (max-width: 979px) {
+  header {
+    font-size: 20px;
+  }
+  header img {
+    height: 100px;
+    width: 100px;
+    margin-bottom: -5px;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    font-size: 20px;
+    padding: 20px;
+    line-height: 120%;
+  }
+  header img {
+    margin-bottom: 5px;
+  }
+  header div {
+    display: inline;
+  }
+  header span, #handle, #yours_truly {
+    font-size: 120%;
+    line-height: inherit;
+  }
+
+  #info {
+    margin: 0;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+  }
+  #info hr {
+    display: block;
+    border: 0;
+    height: 1px;
+    background: rgba(255,255,255,0.1);
+    margin: 20px 0;
+  }
+  #info li {
+    margin-top: 15px;
+  }
+  #info span {
+    display: block;
+    padding-left: 0;
+  }
+  #info br {
+    display: none;
+  }
+}
