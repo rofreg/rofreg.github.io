@@ -14,6 +14,14 @@ body {
   vertical-align: middle;
 }
 
+#alert {
+  margin: 20px auto 0;
+  max-width: 300px;
+  padding: 10px 10px 8px;
+  border: 3px solid #a33e50;
+  text-align: center;
+}
+
 header {
   padding: 40px 20px;
   text-align: center;
@@ -25,6 +33,11 @@ header img {
   height: 125px;
   display: block;
   margin: 0 auto -15px;
+}
+header h1 {
+  font-weight: normal;
+  margin: 20px 0 0;
+  font-size: 40px;
 }
 header span {
   color: #a33e50;
@@ -47,12 +60,14 @@ header span {
   padding: 1px 20px 20px;
   font-size: 24px;
 }
+#info.stretch {
+  height: auto;
+}
 #info h3{
   margin-top: 15px;
   color: rgba(255,255,255,0.6);
   font-size: 16px;
   font-weight: normal;
-  text-transform: lowercase;
 }
 #info a{
   color: inherit;
@@ -85,6 +100,10 @@ header span {
   margin-top: 0px;
 }
 
+#back {
+  text-align: center;
+}
+
 @media (max-width: 979px) {
   header {
     font-size: 20px;
@@ -97,6 +116,10 @@ header span {
 }
 
 @media (max-width: 500px) {
+  #container {
+    vertical-align: top;
+  }
+
   header {
     font-size: 20px;
     padding: 20px;
@@ -135,5 +158,9 @@ header span {
   }
   #info br {
     display: none;
+  }
+
+  #back {
+    padding: 10px 0;
   }
 }
