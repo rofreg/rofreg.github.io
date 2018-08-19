@@ -14,14 +14,6 @@ body {
   vertical-align: middle;
 }
 
-#alert {
-  margin: 20px auto 0;
-  max-width: 300px;
-  padding: 10px 10px 8px;
-  border: 3px solid #a33e50;
-  text-align: center;
-}
-
 header {
   padding: 40px 20px;
   text-align: center;
@@ -56,15 +48,14 @@ header span {
   background: #a33e50;
   color: #fff;
   width: 380px;
-  height: 399px;
-  padding: 1px 20px 20px;
+  padding: 0 20px 20px;
   font-size: 24px;
 }
 #info.stretch {
   height: auto;
 }
 #info h3{
-  margin-top: 15px;
+  padding-top: 20px;
   color: rgba(255,255,255,0.6);
   font-size: 16px;
   font-weight: normal;
@@ -93,11 +84,11 @@ header span {
 #info .years a {
   font-size: 16px;
 }
-#peace{
+#peace {
   text-align: right;
   font-size: 14px;
   color: rgba(255,255,255,0.6);
-  margin-top: 0px;
+  margin-top: 10px;
 }
 
 #back {
