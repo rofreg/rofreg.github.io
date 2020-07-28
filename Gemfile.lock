@@ -23,7 +23,7 @@ GEM
     multipart-post (2.0.0)
     naught (1.1.0)
     public_suffix (2.0.5)
-    puma (3.7.0)
+    puma (3.12.6)
     rack (1.6.5)
     rack-protection (1.5.3)
       rack
