@@ -1,0 +1,112 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  font-size: 15px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  background: #ddd;
+}
+
+#container {
+  width: 840px;
+  margin: 0 auto;
+  padding: 10px 20px 30px;
+}
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,q,small,strong,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;margin:0;padding:0}article,aside,figure,figure img,figcaption,hgroup,footer,header,nav,section,video,object{display:block}a img{border:0}figure{position:relative}figure img{width:100%}
+* :focus { outline: 0 }
+
+a {
+  text-decoration: none;
+}
+
+#blog_info img {
+  width: 50px;
+  vertical-align: -13px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
+
+#blog_info h1 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 36px;
+  margin: 25px 0 0 0;
+  display: inline-block;
+}
+
+#blog_info h1 a {
+  color: #333333;
+}
+
+#blog_info .description {
+  color: #646464;
+  margin-top: 7px;
+  margin-bottom: 35px;
+}
+
+#blog_info .description a {
+  color: #427ea3;
+  padding: 0;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 24px;
+}
+
+li {
+  list-style-type: none;
+}
+
+#posts {
+  width: 840px;
+  color: #4C4C4C;
+  margin: 0 60px 0 0;
+}
+
+#posts .post {
+  margin: 0 0 25px 0;
+}
+
+#posts .post section.media {
+  line-height: 0;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, .4);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, .4);
+  position: relative;
+  display: inline-block;
+  width: 600px;
+  vertical-align: top;
+}
+
+.post .media img {
+  width: 100%;
+  background: #fff;
+}
+
+.post section.caption_and_post_info {
+  background: none;
+  display: block;
+  vertical-align: top;
+  width: 220px;
+  margin: 0 auto auto 10px;
+  float: right;
+}
+
+.post_info li {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.post_info li img {
+  vertical-align: -5px;
+  margin-right: 5px;
+  height: 24px;
+  width: 24px;
+}
