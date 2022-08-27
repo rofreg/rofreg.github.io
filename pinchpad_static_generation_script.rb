@@ -42,7 +42,7 @@ posts_by_date.keys.sort.each do |date|
       <header id='header'>
         <section id='blog_info'>
           <h1>
-            <a href='/'><img src='app_icon.png'> Pinch Pad</a> 
+            <a href='https://www.pinchpad.com'><img src='app_icon.png'> Pinch Pad</a>
           </h1>
           <div class='description'>
             Journal comics by <a href='https://rofreg.com'>Ryan Laughlin</a>.
