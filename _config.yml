@@ -1,0 +1,12 @@
+title: Ryan Laughlin is a person on the Internet
+description: Rare blog posts about common things
+url: https://rofreg.com
+domain: rofreg.com
+baseurl: /
+exclude:
+  - bin/*
+  - Gemfile
+  - Gemfile.lock
+  - CNAME
+plugins:
+  - jekyll-feed

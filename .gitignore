@@ -4,3 +4,6 @@
 *.swp
 /.env
 design/*
+.jekyll-metadata
+.jekyll-cache
+_site/*

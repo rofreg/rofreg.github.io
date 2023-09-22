@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ryan Laughlin is a person on the Internet</title>
-    <link href='/reset.css' rel='stylesheet' type='text/css'>
-    <link href='/rofreg.css?updated=20220129' rel='stylesheet' type='text/css'>
+    <link href='/assets/reset.css' rel='stylesheet' type='text/css'>
+    <link href='/assets/rofreg.css?updated=20220129' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Gentium+Basic' rel='stylesheet' type='text/css'>
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/assets/favicon-16x16.png" sizes="16x16" />
+    <link rel="alternate" type="application/atom+xml" href="/feed.xml" />
     <meta name="description" content="Ryan Laughlin is a Rails developer and user interface designer based in Providence, RI. (This is his website.)">
     <script>
       // randomize theme color
@@ -23,24 +24,24 @@
   <body>
     <div id="container">
       <header>
-        <a href="/">
-          <img src="/avatar.png">
-        </a>
-        <h1>
-          Talks
-        </h1>
+        <div>
+          <img src="/assets/avatar.png">
+          <span id="handle">rofreg</span> is the online alias of
+        </div>
+        <div>
+          <span id="yours_truly">Ryan&nbsp;Laughlin</span>, a
+          <script>
+            var age = new Date - 635506800000;
+            document.write((age / 1000 / 60.0 / 60.0 / 24.0 / 365.25).toFixed(2));
+          </script><noscript>27</noscript>-year-old
+        </div>
+        <div>
+          developer and designer based in <span id="location">Providence,&nbsp;RI.</span>
+        </div>
       </header>
 
-      <div id="info" class='stretch'>
-        <h3>RailsConf 2018</h3>
-        <a href="/talks/railsconf2018.pdf" target="_blank">The Doctor Is In: Using checkups to find bugs in production</a>
-
-        <h3>RubyConf 2017 (lightning talk)</h3>
-        <a href="/talks/rubyconf2017.pdf" target="_blank">Checkups in brief</a>
-      </div>
-
-      <div id="back">
-        <a href="/">Back</a>
+      <div id="info">
+        {{ content }}
       </div>
     </div>
 

@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ryan Laughlin is a person on the Internet</title>
-    <link href='/reset.css' rel='stylesheet' type='text/css'>
-    <link href='/rofreg.css?updated=20220129' rel='stylesheet' type='text/css'>
+    <title>Ryan Laughlin • {{ page.title }}</title>
+    <link href='/assets/reset.css' rel='stylesheet' type='text/css'>
+    <link href='/assets/rofreg.css?updated=20220129' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Gentium+Basic' rel='stylesheet' type='text/css'>
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/assets/favicon-16x16.png" sizes="16x16" />
+    <link rel="alternate" type="application/atom+xml" href="/feed.xml" />
     <meta name="description" content="Ryan Laughlin is a Rails developer and user interface designer based in Providence, RI. (This is his website.)">
     <script>
       // randomize theme color
@@ -24,25 +25,15 @@
     <div id="container">
       <header>
         <a href="/">
-          <img src="/avatar.png">
+          <img src="/assets/avatar.png">
         </a>
         <h1>
-          Retired projects
+          {{ page.title }}
         </h1>
       </header>
 
       <div id="info" class='stretch top-padding'>
-        <a href="https://strikelist.rofreg.com/" target="_blank">Strikelist</a>
-        <span>GOTV tool for progressive campaigns</span><br>
-
-        <a href="https://twitter.com/potus_progress" target="_blank">@potus_progress</a>
-        <span>Twitter bot</span><br>
-
-        <a href="https://github.com/rofreg/ripta" target="_blank">RIPTA Realtime</a>
-        <span>live transit data</span><br>
-
-        <a href="https://github.com/rofreg/oculus-space" target="_blank">Oculus Space</a>
-        <span>WebGL VR demo from 2013</span>
+        {{ content }}
       </div>
 
       <div id="back">
