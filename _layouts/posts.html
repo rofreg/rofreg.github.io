@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div id="info" class="dynamic_color_background" style="font-size: 18px; text-align: center; margin-bottom: 20px">
+  <p>Subscribe to new posts via Atom or RSS <a href="/feed.xml" style="text-decoration: underline">here</a>.</p>
+</div>
+
+{% for post in site.posts %}
+  <article>
+    <h1>
+      <a href="{{ post.url }}">
+        {{ post.title }}
+        {% if post.subtitle %}
+          <div class='subtitle'>{{ post.subtitle }}</div>
+        {% endif %}
+      </a>
+    </h1>
+    {{ post.excerpt }}
+    {% if post.content.size > post.excerpt.size %}
+      <div class="read_more">
+        <a href="{{ post.url }}" class="read_more">Read more</a>
+      </div>
+    {% endif %}
+    <div class="posted_on">
+      🗓️ {{ post.date | date: "%A, %B %d, %Y" }}
+    </div>
+  </article>
+{% endfor %}

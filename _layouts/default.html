@@ -3,10 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ryan Laughlin is a person on the Internet</title>
+    <title>
+      {% if page.full_title %}
+        {{ page.full_title }}
+      {% else %}
+        Ryan Laughlin • {{ page.title }}
+      {% endif %}
+    </title>
     <link href='/assets/reset.css' rel='stylesheet' type='text/css'>
-    <link href='/assets/rofreg.css?updated=20220129' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Gentium+Basic' rel='stylesheet' type='text/css'>
+    <link href='/assets/rofreg.css?updated={{site.time | date: "%Y%m%d-%H%M%S"}}' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Gentium+Plus:400,400i,700&display=swap' rel='stylesheet' type='text/css'>
     <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="/assets/favicon-16x16.png" sizes="16x16" />
     <link rel="alternate" type="application/atom+xml" href="/feed.xml" />
@@ -16,46 +22,48 @@
       var colors = ["#a33e50", "#57754f", "#96692b", "#433a6d", "#6d3f6b", "#4b6868", "#80824e"];
       var randomColor = colors[Math.floor(Math.random()*colors.length)];
       document.write("<style>\
-        header span { color: " + randomColor + " }\
-        #info { background: " + randomColor + "}\
-      </style>");
+        .dynamic_color { color: " + randomColor + " }\
+        .dynamic_color_background { background: " + randomColor + "}\
+      </style>\
+      <meta name='theme-color' content='" + randomColor + "'>");
     </script>
   </head>
   <body>
     <div id="container">
       <header>
-        <div>
-          <img src="/assets/avatar.png">
-          <span id="handle">rofreg</span> is the online alias of
-        </div>
-        <div>
-          <span id="yours_truly">Ryan&nbsp;Laughlin</span>, a
-          <script>
-            var age = new Date - 635506800000;
-            document.write((age / 1000 / 60.0 / 60.0 / 24.0 / 365.25).toFixed(2));
-          </script><noscript>27</noscript>-year-old
-        </div>
-        <div>
-          developer and designer based in <span id="location">Providence,&nbsp;RI.</span>
-        </div>
+        {% if page.layout == 'homepage' %}
+          <div>
+            <img src="/assets/avatar.png">
+            <span id="handle" class="dynamic_color">rofreg</span> is the online alias of
+          </div>
+          <div>
+            <span id="yours_truly" class="dynamic_color">Ryan&nbsp;Laughlin</span>, a
+            <script>
+              var age = new Date - 635506800000;
+              document.write((age / 1000 / 60.0 / 60.0 / 24.0 / 365.25).toFixed(2));
+            </script><noscript>27</noscript>-year-old
+          </div>
+          <div>
+            developer and designer based in <span id="location" class="dynamic_color">Providence,&nbsp;RI.</span>
+          </div>
+        {% elsif page.layout == 'post' or page.layout == 'posts' %}
+          <a href="/">
+            <img src="/assets/avatar.png">
+          </a>
+          <h1>
+            <a href="/" class="dynamic_color">Ryan Laughlin</a> has a <a href="/blog" class="dynamic_color">blog</a> on the <a href="https://www.youtube.com/watch?v=U_o8gerare0" class="dynamic_color">Internet.</a>
+          </h1>
+        {% else %}
+          <a href="/">
+            <img src="/assets/avatar.png">
+          </a>
+          <h1>
+            {{ page.title }}
+          </h1>
+        {% endif %}
       </header>
 
-      <div id="info">
-        {{ content }}
-      </div>
+      {{ content }}
     </div>
-
-    <script type="text/javascript">
-      // Google Analytics
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-37305199-1']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
   </body>
 </html>

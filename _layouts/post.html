@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<hr class="post_separator">
+
+<article>
+  <h1>
+    {{ page.title }}
+    {% if page.subtitle %}
+      <div class='subtitle'>
+        {{ page.subtitle }}
+      </div>
+    {% endif %}
+  </h1>
+  {{ content }}
+  <div class="posted_on">
+    🗓️ {{ page.date | date: "%A, %B %d, %Y" }}
+  </div>
+</article>
+
+<div id="info" class="dynamic_color_background" style="font-size: 18px; text-align: center">
+  <a href="/blog" style="text-decoration: underline">View all posts</a> • <a href="/feed.xml" style="text-decoration: underline">Subscribe via RSS</a>
+</div>

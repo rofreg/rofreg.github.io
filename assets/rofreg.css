@@ -2,7 +2,7 @@ html, body {
   height: 100%
 }
 body {
-  font-family: 'Gentium Basic', Times, serif;
+  font-family: 'Gentium Plus', Times, serif;
   background: #fff;
   color: #444;
   display: table;
@@ -14,8 +14,15 @@ body {
   vertical-align: middle;
 }
 
+.dynamic_color {
+  color: #a33e50;
+}
+.dynamic_color_background {
+  background: #a33e50;
+}
+
 header {
-  padding: 40px 20px;
+  padding: 40px 20px 20px;
   text-align: center;
   font-size: 40px;
   line-height: 110%;
@@ -30,38 +37,43 @@ header h1 {
   font-weight: normal;
   margin: 20px 0 0;
   font-size: 40px;
+  line-height: 40px;
+}
+header a {
+  text-decoration: none;
+}
+header a:hover {
+  text-decoration: underline;
 }
 header span {
   color: #a33e50;
-  font-size: 150%;
   line-height: 110%;
 }
-#handle {
+span#handle {
   font-size: 250%;
 }
-#yours_truly {
+span#yours_truly {
   font-size: 200%;
+}
+span#location {
+  font-size: 150%;
 }
 
 #info{
   margin: 0 auto 40px;
-  background: #a33e50;
   color: #fff;
   width: 380px;
-  padding: 0 20px 20px;
+  padding: 20px;
   font-size: 24px;
-}
-#info.stretch {
-  height: auto;
-}
-#info.top-padding {
-  padding-top: 20px;
 }
 #info h3{
   padding-top: 20px;
   color: rgba(255,255,255,0.6);
   font-size: 16px;
   font-weight: normal;
+}
+#info h3:first-child {
+  padding-top: 0;
 }
 #info a{
   color: inherit;
@@ -99,6 +111,67 @@ header span {
   text-align: center;
 }
 
+hr.post_separator {
+  display: block;
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  margin: 20px auto;
+  max-width: 200px;
+}
+
+article {
+  padding: 20px;
+  line-height: 150%;
+  font-size: 18px;
+  max-width: 670px;
+  margin: 0 auto;
+}
+article p {
+  margin: 0 0 1em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+article ul {
+  padding-left: 20px;
+  margin: 0 0 1em;
+}
+article li {
+  list-style: disc outside;
+  margin: 0.25em 0;
+}
+article h1 {
+  font-size: 200%;
+  margin: 0 0 0.5em;
+  font-weight: bold;
+}
+article h1 a {
+  text-decoration: none;
+  color: inherit;
+}
+article h1 a:hover {
+  text-decoration: underline;
+}
+article h1 div.subtitle {
+  margin-top: 0.5em;
+  font-size: 18px;
+  opacity: 75%;
+  line-height: 125%;
+  font-weight: normal;
+  font-style: italic;
+  text-decoration: none;
+}
+div.read_more{
+  margin-bottom: 1em;
+}
+article div.posted_on {
+  opacity: 70%;
+}
+article h2 {
+  margin: 1em 0 0.5em;
+  font-weight: bold;
+}
+
 @media (max-width: 979px) {
   header {
     font-size: 20px;
@@ -110,7 +183,7 @@ header span {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #container {
     vertical-align: top;
   }
@@ -118,7 +191,7 @@ header span {
   header {
     font-size: 20px;
     padding: 20px;
-    line-height: 120%;
+    line-height: 170%;
   }
   header img {
     margin-bottom: 5px;
@@ -126,11 +199,20 @@ header span {
   header div {
     display: inline;
   }
-  header span, #handle, #yours_truly {
-    font-size: 120%;
+  header h1 {
+    font-size: 24px;
+  }
+  #handle, #yours_truly, #location {
+    font-size: 100%;
     line-height: inherit;
   }
 
+  hr.post_separator {
+    margin: 5px auto 10px;
+  }
+  article {
+    font-size: 16px;
+  }
   #info {
     margin: 0;
     width: auto;
@@ -142,7 +224,7 @@ header span {
     border: 0;
     height: 1px;
     background: rgba(255,255,255,0.1);
-    margin: 20px 0;
+    margin: 20px 0 0;
   }
   #info li {
     margin-top: 15px;

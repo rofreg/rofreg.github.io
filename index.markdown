@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: homepage
+full_title: Ryan Laughlin is a person on the Internet
 ---
 
 <h3>current occupation:</h3>
@@ -27,18 +28,27 @@ co-founder and CTO at <a href="https://www.splitwise.com">Splitwise</a>
     <a href="https://itunes.apple.com/us/app/pinch-pad-post-sketches-to/id999197469?mt=8" target="_blank">Pinch Pad</a>
     <span>simple drawing app</span>
   </li>
+  <li>
+    <a href="/talks">Conference talks</a>
+    <span>checkups and more</span>
+  </li>
   <li class="more">
-    <a href="/projects">More projects &raquo;</a>
+    <a href="/projects">More projects</a>
   </li>
 </ul>
 
 <hr>
 
-<h3>conference talks:</h3>
+<h3>recent blog posts:</h3>
 <ul>
-  <li>
-    <a href="https://www.youtube.com/watch?v=gEAlhKaK2I4" target="_blank">The Doctor Is In: Using checkups to find bugs in production</a> <a href="/talks/railsconf2018.pdf">(+ slides)</a>
-    <span style="padding: 0">RailsConf 2018</span>
+  {% for post in site.posts limit:1 %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <span>{{ post.subtitle }}</span>
+    </li>
+  {% endfor %}
+  <li class="more">
+    <a href="/blog">More blog posts</a>
   </li>
 </ul>
 
