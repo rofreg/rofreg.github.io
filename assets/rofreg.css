@@ -168,6 +168,12 @@ article h1 div.subtitle {
   font-style: italic;
   text-decoration: none;
 }
+article p.gallery img {
+  max-width: 50%;
+}
+article img {
+  max-width: 100%;
+}
 div.read_more{
   margin-bottom: 1em;
 }

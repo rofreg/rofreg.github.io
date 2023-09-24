@@ -18,6 +18,8 @@ And boy did I have a lot of feelings about it!! Mostly good ones, but also bitte
 
 Sometimes you fly to Ohio to play video games. Or in my case, just to watch OTHER people play video games.
 
+![We spotted this license plate literally right after we arrived.](/assets/riptide/license.jpeg)
+
 I got hooked on Splatoon with the release of Splatoon 2 in 2017, and proceeded to pour about a thousand hours into it by its second anniversary — far more than any other video game I’ve ever played. Mechanically, it is a delight to play, with [movement and team coordination](https://twitter.com/IPLSplatoon/status/1700997953698328993) that light up a part of my brain that nothing else touches. Stylistically, it feels fresh and fluid, mixing [street fashion](https://www.nintendo.co.jp/character/splatoon/en/fashion/#gear) and [punk electropop](https://www.youtube.com/watch?v=ah-w2Du1OL4) and [oversaturated colors](https://twitter.com/NintendoAmerica/status/1285545062600855553) and [heavy funk slap bass](https://www.youtube.com/watch?v=HjXQpcLad3g) in ways that ALSO delight my brain. (There is a sizable queer audience for Splatoon, at least in the West, and that definitely resonates with me as well, in ways that I don’t know I could fully articulate.)
 
 And so for a while I’ve also wanted to go to a Splatoon-themed event! The game has taken off to an extraordinary extent in Japan (where the latest installment was [the fastest-selling video game ever](https://www.gamespot.com/amp-articles/splatoon-3-is-fastest-selling-game-of-all-time-in-japan/1100-6507376/)), but it hasn’t taken off quite as much in the United States. The competitive community is passionate but small, with Twitch events that max out around a few thousand viewers and minimal official support from Nintendo itself. As a result, there aren’t a lot of in-person events to choose from, unfortunately.
@@ -42,7 +44,13 @@ Kalahari sits on a strip of flat highway that has every chain restaurant I have 
 
 And the venue itself was massive! Jake and I had a running joke about touching grass each day (usually when running out to get fast food...) but honestly I was hitting 5-10K steps per day just going back and forth from the hotel room to convention center. Endless hallways interrupted by the occasional giant bronze statue of a lion or a gorilla. Extremely normal.
 
+<p class="gallery">
+  <img src="/assets/riptide/lion.jpeg" alt="Lions and pencil'd and Plup, oh my"><img src="/assets/riptide/sign.jpeg" alt="Lions and Plup, oh my">
+</p>
+
 As previously mentioned, there was a huge indoor waterpark – and also an outdoor one, for that matter. We didn't end up going to either. That was an good little exercise for me, feeling the pull of what I was _supposed_ to do (I'm at a waterpark, I should go to the waterpark!) vs. figuring out what Jake and I actually _wanted_ to do (head back to the hotel room to play Pikmin and watch Murder She Wrote).
+
+![The audience for Super Smash Bros](/assets/riptide/smash.jpeg)
 
 The actual competition was about 70% focused on Super Smash Bros (specifically, Melee and Ultimate), 20% focused on Splatoon, and 10% focused on assorted other games. It was nice to have some variety, and to be able to move from one giant-room-full-of-screens to another. At most times of day, there were enough idle consoles sitting around that we could grab a station and play a few casual games if we wanted to.
 
@@ -58,11 +66,15 @@ It is an unusual and wonderful and turbulent feeling to look at a community and 
 
 The competitive Splatoon community is delightful. It’s small and passionate, vibrant and queer, creative, supportive, celebratory. As someone who instinctively tamps down my own enthusiasm for the things that I love, I think it was really good to surround myself with folks who (1) were EXTREMELY enthusiastic about something and (2) were VERY eager to share it with others. I have things to learn here.
 
+![The 9-screen setup for Splatoon matches was SUPER fun to watch.](/assets/riptide/screens.jpeg)
+
 The scene seems pretty welcoming too, though admittedly that’s an area where I struggled over the course of the weekend. Turns out that if you go to a video game competition, you can feel a bit unanchored if you’re not actually competing! I did my best to put myself out there – going so far as joining a Discord that someone had shared on Twitter and recruiting a stranger for some extracurricular Salmon Run overfishing – but I immediately felt like an outsider again when (1) my new acquaintance asked “who I knew” (with no ill intent!) and then (2) turned out to be a world-record holder on one of the maps. It was still a good time, but boy did I feel out of my depth.
 
 And that was really the paradox of this whole trip for me: I’m a big enough Splatoon fan that I want to celebrate that fandom with other people, but I also felt like an impostor compared to these folks who were so much more dedicated than I was. The people I met had enamel Shiver pins and custom-commissioned avatars, and included their main weapon in the first line of their Twitter bio. They go by their online handles: Leonidas, Kyo, NineWholeGrains. Meanwhile my bio uses my real name and says I’m the co-founder of Splitwise. Different worlds!!
 
 Which is not to say that I didn’t still feel a powerful sense of belonging at various moments. Especially on the final day of spectating, I had some lovely casual back-and-forth conversations with the folks around me, adding our own color commentary during the matches and then discussing our love of Big Man between sets. It was a fuckin’ delight to scream out “SODA!!!!” every time someone deployed a Tacticooler, and to erupt in celebration when Last Light used the same goddamn Kraken + Super Jump combo to [steal Semifinals Game 5](https://twitter.com/IPLSplatoon/status/1700943366152667343) that they had used to steal Semifinals Game 1. What a unique electricity, sharing a room with a few hundred people who love this game more than anyone else.
+
+![The main crowd for Splatoon. Can you find me and Jake?](/assets/riptide/crowd.jpeg)
 
 It made me want more – in a way that I just don’t think I can have. Or rather, in a way that I’m pretty sure I don’t actually want! Going deep on competitive Splatoon would require doubling down, finding a team and committing to weekly scrims and engaging on Discord and etc etc etc. My time is so scarce and so valuable, and I’ve already given Splatoon so much of it. And I’m 33! If I really wanted to make this my thing, it’d have to be to the exclusion of pretty much all of my other adult hobbies, and maybe even the negligence of some adult responsibilities – and I’m wise enough to know that would be a terrible trade for me personally.
 
@@ -75,3 +87,5 @@ That said – if I am saving my time and energy for other things, then I do thin
 So. I don’t think this will be my last in-person Splatoon event – there’s still more joy to be had there, and maybe some form of community too, especially if the scene grows beyond the ultra-hardcore enthusiasts. I especially hope I get to do this again with my brother, as it was really, really nice to spend some one-on-one time together, especially on Friday when the competition had hardly begun. I want to stay open, and feel novel feelings, and work on the skill of being openly excited about shit.
 
 (Also I hope the community gets big enough to support some cooperative Salmon Run events sometime, cuz THAT would REALLY be my jam.)
+
+![](/assets/riptide/selfie.jpeg)
