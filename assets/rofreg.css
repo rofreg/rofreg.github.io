@@ -51,6 +51,7 @@ header span {
 }
 span#handle {
   font-size: 250%;
+  line-height: 90%;
 }
 span#yours_truly {
   font-size: 200%;
@@ -68,7 +69,8 @@ span#location {
 }
 #info h3{
   padding-top: 20px;
-  color: rgba(255,255,255,0.6);
+  padding-bottom: 2px;
+  color: rgba(255,255,255,0.75);
   font-size: 16px;
   font-weight: normal;
 }
@@ -82,10 +84,14 @@ span#location {
 #info a:hover{
   text-decoration: underline
 }
-#info span {
+#info span, #info div.subtitle {
   font-size: 16px;
-  color: rgba(255,255,255,0.6);
+  color: rgba(255,255,255,0.75);
   padding-left: 0;
+}
+#info div.subtitle {
+  font-style: italic;
+  margin-top: -0.3em;
 }
 #info a + span {
   padding-left: 3px;
@@ -99,11 +105,12 @@ span#location {
 #info li.more {
   font-size: 16px;
   line-height: 24px;
+  padding-top: 0.3em;
 }
 #peace {
   text-align: right;
   font-size: 14px;
-  color: rgba(255,255,255,0.6);
+  color: rgba(255,255,255,0.75);
   margin-top: 10px;
 }
 
@@ -165,7 +172,7 @@ div.read_more{
   margin-bottom: 1em;
 }
 article div.posted_on {
-  opacity: 70%;
+  opacity: 75%;
 }
 article h2 {
   margin: 1em 0 0.5em;
@@ -180,6 +187,10 @@ article h2 {
     height: 100px;
     width: 100px;
     margin-bottom: -5px;
+  }
+  span#handle {
+    font-size: 250%;
+    line-height: 100%;
   }
 }
 
@@ -202,8 +213,8 @@ article h2 {
   header h1 {
     font-size: 24px;
   }
-  #handle, #yours_truly, #location {
-    font-size: 100%;
+  span#handle, span#yours_truly, span#location {
+    font-size: 120%;
     line-height: inherit;
   }
 
@@ -228,6 +239,9 @@ article h2 {
   }
   #info li {
     margin-top: 15px;
+  }
+  #info li.more {
+    padding-top: 0;
   }
   #info span {
     display: block;
