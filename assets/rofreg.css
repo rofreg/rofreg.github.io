@@ -200,7 +200,7 @@ article h2 {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   #container {
     vertical-align: top;
   }
@@ -218,6 +218,7 @@ article h2 {
   }
   header h1 {
     font-size: 24px;
+    line-height: 125%;
   }
   span#handle, span#yours_truly, span#location {
     font-size: 120%;
