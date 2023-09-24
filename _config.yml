@@ -10,3 +10,4 @@ exclude:
   - CNAME
 plugins:
   - jekyll-feed
+permalink: pretty
