@@ -18,14 +18,6 @@ co-founder and CTO at <a href="https://www.splitwise.com">Splitwise</a>
     <span>journal comics since 2010</span>
   </li>
   <li>
-    <a href="https://itunes.apple.com/us/app/lightweight-simple-weight/id690015714?mt=8" target="_blank">Lightweight</a>
-    <span>weight &amp; calorie tracker</span>
-  </li>
-  <li>
-    <a href="https://itunes.apple.com/us/app/pinch-pad-post-sketches-to/id999197469?mt=8" target="_blank">Pinch Pad</a>
-    <span>simple drawing app</span>
-  </li>
-  <li>
     <a href="/talks">Conference talks</a>
     <span>checkups and more</span>
   </li>
