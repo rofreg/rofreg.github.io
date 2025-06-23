@@ -10,7 +10,7 @@ When I boil you down, cousin,<br>
 this is what comes out:<br>
 I did not know you.<br>
 I do not know what is lost, <br>
-only that it is lost,<br>
+only that it _is_ lost,<br>
 and that now we are carving the statue<br>
 that commemorates the losing.<br>
 It will sit in a place of horror<br>
