@@ -13,6 +13,6 @@ When you look at them they get more distant, you know?<br>
 So you don’t look at them, and they swell like swallowed tongues,<br>
 crowded around the low dull heat of almost-language,<br>
 a commotion of connotation. _This could mean something,_<br>
-probably, if I could say it, if you could say it.
-
+probably, if I could say it, if you could say it.<br>
+<br>
 _Written October 11, 2024, a random Friday morning at home in Providence_
