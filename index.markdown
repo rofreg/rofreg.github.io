@@ -21,6 +21,10 @@ co-founder and CTO at <a href="https://www.splitwise.com">Splitwise</a>
     <a href="/talks">Conference talks</a>
     <span>checkups and more</span>
   </li>
+  <li>
+    <a href="https://flirtationdevice.bandcamp.com/album/four-singles">Flirtation Device</a>
+    <span>my two-piece band</span>
+  </li>
   <li class="more">
     <a href="/projects">More projects →</a>
   </li>
