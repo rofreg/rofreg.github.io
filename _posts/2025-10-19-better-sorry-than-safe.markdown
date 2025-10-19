@@ -33,5 +33,5 @@ in spite of your choosing,<br>
 or in lieu of it,<br>
 or in light of it.
 
-_Started January 26, 2025
+_Started January 26, 2025<br>
 Finished June 2, 2025, on a plane to start a vacation_
